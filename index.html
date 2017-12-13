@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Theory of constraints</h1>
+					<h3>Applied to the NAB project</h3>
+					<p>
+						<small>Created by <a href="mailto:vhoang@deloitte.com.au">Vy HOANG</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>NAB calculator framework</h2>
+					<p>
+						What we had to do:
+					</p>
+					<ul>
+						<li class="fragment">6 content managed online calculators</li>
+						<li class="fragment">3 content managed selector tools</li>
+						<li class="fragment">in 5 months	</li>
+					</ul>
+				</section>
+				<section>
+					<h2>NAB calculator framework</h2>
+					<p>
+						12 days per project 
+					</p>
+					<ul class="fragment">
+						<li>Conception</li>
+						<li>Build</li>
+						<li>Integration to EAM</li>
+						<li>Testing (UT, cross browser, functional , accessibility etc)</li>
+						<li>Code fixes</li>
+						<li>Code review</li>
+						<li>Meetings</li>
+						<li>Leaves (Sick, parental, annual) etc...</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li class="fragment">We managed to deliver.</li>
+						<li class="fragment">We have learnt a lot about team efficiency.</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>The goal</h2>
+						<img src="img/book.jpg" alt="">
+					</section>
+					<section id="fragments">
+						<h2>Theory of constraints</h2>
+						<p class="fragment">The Theory of Constraints is a methodology for identifying the most important limiting factor (i.e. constraint) that stands in the way of achieving a goal and then systematically improving	 that constraint until it is no longer the limiting factor. In manufacturing, the constraint is often referred to as a bottleneck.</p>
+					</section>
+					<section>
+						<h2>Bottleneck vs non-bottleneck</h2>
+						<img src="img/sand-clock4.png" alt="">
+					</section>
+					<section>
+						<h2>In a project</h2>
+						<p><strong>Bottleneck:</strong></p>
+						<p class="fragment"> It is a resource whose capacity is <span class="color-red">less than or equal to</span> the demand placed upon it.</p>
+						<p><strong>Non-bottleneck</strong></p>
+						<p class="fragment"> Any resource whose capacity is <span class="color-blue">greater than</span> the demand placed upon it</p>
+					</section>
+					
+					<section>
+						<h2>What makes a bottleneck</h2>
+						<div class="fragment">
+							<p>Ex: New to a technology</p>
+							<ul>
+								<li>First time you use a framework</li>
+								<li>Then capacity of the FED is low</li>
+							</ul>
+						</div>
+						<div class="fragment">
+							<p>Ex: calculator</p>
+							<ul>
+								<li>All the logic in the FED</li>
+								<li>Then the demand on the FED is high</li>
+							</ul>
+						</div>
+						<p class="fragment">It is not good or bad, it is the reality</p>
+						<p class="fragment">What matters is how well your work on your bottlenecks</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Why does it matter?</h2>
+					
+					<p class="fragment">
+						One hour <span class="color-red">wasted</span> on a bottleneck is <span class="color-red">lost</span> for the entire team.  
+					</p>
+					<p class="fragment">
+						One hour <span class="color-red">wasted</span> by a non-bottleneck has <span class="color-red">little</span> impact on the team.  
+					</p>
+					<p class="fragment">Team delivery is limited by bottlenecks.</p>
+					<p class="fragment">
+						Improving your bottleneck will be more impactful than improving a non-bottleneck resource.
+					</p>
+				</section>
+				<section>
+					<section>
+							<h2>Working as a bottleneck</h2>
+							<ul>
+								<li class="fragment">Expand capacity</li>
+								<li class="fragment">Reduce demand</li>
+							</ul>
+					</section>
+					<section>
+						<img src="img/sand-clock3.png" alt="">
+					</section>
+					<section>
+						<h2>Extend capacity</h2>
+						<ul>
+							<li class="fragment">Automation (Grunt / gulp)</li>
+							<li class="fragment">Code scaffolding (yeoman)</li>
+							<li class="fragment">Improve processes (excel to javascript converter)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Extend capacity (2)</h2>
+						<ul>
+							<li class="fragment">Adding extra FEDs</li>
+							<li class="fragment">Increase quality (architecture)</li>
+							<li class="fragment">Training</li>
+						</ul>
+						<p class="fragment">Requires investment</p>
+					</section>
+					<section>
+						<img src="img/sand-clock2.png" alt="">
+					</section>
+					<section>
+							<h2>Reduce demand (example for FED)</h2>
+							<p class="fragment">QA before the bottleneck gets involved.</p>
+							<ul>
+								<li class="fragment">Pop up testing to detect UX issues.
+									<img src="img/popup.jpeg" alt="">
+								</li>
+							</ul>
+					</section>
+					<section>
+						<p>
+							Ask tester for more detail bug description
+						</p>
+							<ul>
+								<li class="fragment">Design QA</li>
+							</ul>
+					</section>
+					<section>
+						<p>
+							QA design before FED implementation
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+							<h2>If a non-bottleneck</h2>
+					</section>
+					<section>
+							<h2>Testers</h2>
+							<ul>
+								<li class="fragment">
+									TDD on heavy logic using Jasmine.
+								</li>
+								<li class="fragment">
+									BDD on standard user journey Protractor.
+								</li>
+							</ul>
+					</section>
+					<section>
+							<h2>BED</h2>
+							<ul>
+								<li class="fragment">Simplify the HTML as much as possible</li>
+								<li class="fragment">HTML checker</li>
+							</ul>
+					</section>
+					<section>
+							<h2>Content author</h2>
+							<ul>
+								<li class="fragment">Simplify authoring experience</li>
+							</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+							<h2>What we have learned</h2>
+							<ul>
+								<li>Individual efficiency vs team efficiency.</li>
+								<li>Taking constraints into account help to prioritize retro actions.</li>
+								<li>Bottlenecks move as the context changes: Re-assess.</li>
+							</ul>
+					</section>
+					<section>
+							<h2>Apply TOC in your projects</h2>
+							<ul>
+								<li>Identify the projects bottlenecks</li>
+								<li>Decide how to exploit them.</li>
+								<li>Subordinate every other decision to the bottleneck.</li>
+								<li>Elevate the bottleneck.</li>
+								<li>And again!</li>
+							</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Thanks</h2>
+					<p>References</p>
+					<ul>
+						<li>
+							"The Goal", Eliyahu M. Goldratt, Jeff Cox
+						</li>
+						<li>
+							http://blog.nayima.be/2009/04/16/the-theory-of-constraints-five-focusing-steps-in-action/ 
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
